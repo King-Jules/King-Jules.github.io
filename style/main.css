@@ -1,0 +1,57 @@
+@media (min-width: 500px) {
+body {
+margin-top: 4%;
+margin-bottom: 4%;
+background-color: #fdfdfd;
+}
+.links{
+margin-top: 40px;
+}
+}
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v15/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@media (max-width: 500px){
+body {
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #fdfdfd;
+}
+.links{
+margin-top: 10px;
+}
+}
+html{
+font-family: 'Roboto', sans-serif;
+color: #444;
+}
+a{
+text-decoration: none;
+color: #111;
+}
+ul{
+list-style-type: none;
+}
+.left-bar{
+border-left: solid 1px #aaa;
+padding-left: 2em;
+}
+.bottom-bar{
+border-bottom: solid 1px #aaa;
+padding-bottom: .4em;
+margin-bottom: 1em;
+}
+.blog{
+padding-left: 0;
+}
+.blog-post{
+position:relative;
+}
+.blog-date{
+position:absolute;
+right:0px;
+top:4px;
+}
