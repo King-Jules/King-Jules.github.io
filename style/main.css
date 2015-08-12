@@ -62,6 +62,15 @@ ul{
     top:4px;
 }
 
+.resize {
+    width:100%;
+    height:auto;
+}
+
+.sketch {
+    padding-bottom: 15px;
+}
+
 .new-project {
     padding-top: .6em;
 }
