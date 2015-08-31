@@ -57,19 +57,29 @@
 					
 					<div class="col-md-4 col-xs-12">
 						<h5>Product Design:</h5>
-						<p class="project-li">Mechanical Haptic Alarm Clock</p>
+						<a href="#alarmclock">
+							<p class="project-li">Mechanical Haptic Alarm Clock</p>
+						</a>
 					</div>
 					
 					<div class="col-md-3 col-xs-12">
 						<h5>Graphic Design:</h5>
-						<p class="project-li">Musek</p>
-						<p class="project-li">Sensock</p>
-						<p class="project-li">McGill Rocket Team</p>
+						<a href="#musek">
+							<p class="project-li">Musek</p>
+						</a>
+						<a href="#sensock">
+							<p class="project-li">Sensock</p>
+						</a>
+						<a href="#mcgillrocketteam">
+							<p class="project-li">McGill Rocket Team</p>
+						</a>
 					</div>
 					
 					<div class="col-md-3 col-xs-12">
 						<h5>Web Development:</h5>
-						<p class="project-li">elly-shoe</p>
+						<a href="#elly-shoe">
+							<p class="project-li">elly-shoe</p>
+						</a>
 					</div>
 
 					<!--<div class="col-md-2 col-xs-12">
@@ -82,7 +92,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<hr>
-						<h3 class="new-project">
+						<h3 class="new-project" id="alarmclock">
 							<a href="../projects/alarmclock.html">Mechanical Haptic Alarm Clock</a>	
 						</h3>
 					</div>
@@ -97,52 +107,12 @@
 						<p>A wearable alarm clock using haptic feedback to awaken people with a hearing disability.</p>
 					</div>
 				</div>
-				
-				<!-- Musek -->
-				<div class="row">
-					<div class="col-md-12">
-						<hr>
-						<h3 class="new-project">
-							<a href="../projects/musek.html">Musek</a>
-						</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<a href="../projects/musek.html" class="thumbnail">
-							<img src="../assets/img/musek.png" alt="Musek Android app icon.">
-						</a>
-					</div>
-					<div class="col-md-6">
-						<p>An Android application that plays music based on your mood and location.</p>
-					</div>				
-				</div>
-			
-				<!-- Sensock -->
-				<div class="row">
-					<div class="col-md-12">
-						<hr>
-						<h3 class="new-project">
-							<a href="../projects/sensock.html">Sensock Biometric Smartwear</a>
-						</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-			    		<a href="../projects/sensock.html" class="thumbnail">
-							<img src="../assets/img/sensock-logo.png" alt="Sensock logo.">		
-						</a>
-					</div>
-					<div class="col-md-6">
-						<p>Fabricated a smart-sock to measure vitals such as heart rate and body temperature as well as a haptic feedback sensor to page a doctor via text message.</p>
-					</div>
-				</div>
-				
+
 				<!-- McGill Rocket Team 2015 -->
 				<div class="row">
 					<div class="col-md-12">
 						<hr>
-						<h3 class="new-project">
+						<h3 class="new-project" id="mcgillrocketteam">
 							<a href="../projects/rocket.html">McGill Rocket Team</a>
 						</h3>
 					</div>
@@ -157,12 +127,32 @@
 						<p>Designed the sponsorship package sticker for the 10ft rocket using Illustrator and Photoshop.</p>
 					</div>		
 				</div>
+				
+				<!-- Musek -->
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+						<h3 class="new-project" id="musek">
+							<a href="../projects/musek.html">Musek</a>
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a href="../projects/musek.html" class="thumbnail">
+							<img src="../assets/img/musek.png" alt="Musek Android app icon.">
+						</a>
+					</div>
+					<div class="col-md-6">
+						<p>An Android application that plays music based on your mood and location.</p>
+					</div>				
+				</div>
 
 				<!-- elly-shoe -->
 				<div class="row">
 					<div class="col-md-12">
 						<hr>
-						<h3 class="new-project">
+						<h3 class="new-project" id="elly-shoe">
 							<a href="../projects/elly-shoe.html">elly-shoe</a>
 						</h3>
 					</div>
@@ -178,10 +168,47 @@
 					</div>
 				</div>
 
-				
+				<!-- Sensock -->
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+						<h3 class="new-project" id="sensock">
+							<a href="../projects/sensock.html">Sensock Biometric Smartwear</a>
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+			    		<a href="../projects/sensock.html" class="thumbnail">
+							<img src="../assets/img/sensock-logo.png" alt="Sensock logo.">		
+						</a>
+					</div>
+					<div class="col-md-6">
+						<p>Fabricated a smart-sock to measure vitals such as heart rate and body temperature as well as a haptic feedback sensor to page a doctor via text message.</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top-0
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
 </body>
 
 </html>
