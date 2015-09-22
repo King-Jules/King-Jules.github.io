@@ -30,6 +30,8 @@
 	<!-- JavaScript -->
 	<script src="../js/analytics.js" async=""></script>
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/jquery.js"></script>
 	<script type="text/javascript" async="" src="../js/bootstrap.js"></script>
 
 </head>
@@ -82,10 +84,6 @@
 						</a>
 					</div>
 
-					<!--<div class="col-md-2 col-xs-12">
-						<h5>Programming:</h5>
-						<p class="project-li"></p>
-					</div>-->
 				</div>
 
 				<!--Mechanical Haptic Alarm Clock-->
@@ -98,7 +96,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6" id="pic">
 	    				<a href="../projects/alarmclock.html" class="thumbnail">
 							<img src="../assets/img/drawing.png" alt="Manufacturing drawing of a casing component.">
 						</a>
@@ -212,7 +210,6 @@
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script>
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {

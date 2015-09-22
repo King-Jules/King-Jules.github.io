@@ -83,3 +83,7 @@ ul{
 .bluelink { 
     color: #377BB5;
 }
+
+.project-hover {
+    background-color: rgba(55,123,181, 0.8);
+}
